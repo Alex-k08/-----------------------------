@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Gimnazia1ModelContainer" CdmEntityContainer="Gimnazia1Entities">
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Events">
+        <MappingFragment StoreEntitySet="Events">
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="CharID" ColumnName="CharID" />
+          <ScalarProperty Name="Contents" ColumnName="Contents" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="RealEvent" ColumnName="RealEvent" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="FormatView" ColumnName="FormatView" />
+          <ScalarProperty Name="SoundNumber" ColumnName="SoundNumber" />
+          <ScalarProperty Name="AlarmLevel" ColumnName="AlarmLevel" />
+          <ScalarProperty Name="GpEvent" ColumnName="GpEvent" />
+          <ScalarProperty Name="EventsCategoryID" ColumnName="EventsCategoryID" />
+          <ScalarProperty Name="IsAlarm" ColumnName="IsAlarm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pList">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pList">
+        <MappingFragment StoreEntitySet="pList">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MidName" ColumnName="MidName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="Post" ColumnName="Post" />
+          <ScalarProperty Name="Schedule" ColumnName="Schedule" />
+          <ScalarProperty Name="Avto" ColumnName="Avto" />
+          <ScalarProperty Name="Spack" ColumnName="Spack" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+          <ScalarProperty Name="TabNumber" ColumnName="TabNumber" />
+          <ScalarProperty Name="GrStatus" ColumnName="GrStatus" />
+          <ScalarProperty Name="ChangeTime" ColumnName="ChangeTime" />
+          <ScalarProperty Name="IndexForContactId" ColumnName="IndexForContactId" />
+          <ScalarProperty Name="StatusRecord" ColumnName="StatusRecord" />
+          <ScalarProperty Name="Patterns_ID" ColumnName="Patterns_ID" />
+          <ScalarProperty Name="ID_Number_List" ColumnName="ID_Number_List" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="delta_weight" ColumnName="delta_weight" />
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="GUID_1C" ColumnName="GUID_1C" />
+          <ScalarProperty Name="status_list" ColumnName="status_list" />
+          <ScalarProperty Name="EmailList" ColumnName="EmailList" />
+          <ScalarProperty Name="fielddelete" ColumnName="fielddelete" />
+          <ScalarProperty Name="BlackList" ColumnName="BlackList" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="ReasonToBlackList" ColumnName="ReasonToBlackList" />
+          <ScalarProperty Name="TypeDocum" ColumnName="TypeDocum" />
+          <ScalarProperty Name="SexGuest" ColumnName="SexGuest" />
+          <ScalarProperty Name="DokumSeries" ColumnName="DokumSeries" />
+          <ScalarProperty Name="DokumNumber" ColumnName="DokumNumber" />
+          <ScalarProperty Name="DateDocument" ColumnName="DateDocument" />
+          <ScalarProperty Name="KodPodr" ColumnName="KodPodr" />
+          <ScalarProperty Name="Kem" ColumnName="Kem" />
+          <ScalarProperty Name="DateDocumentEnd" ColumnName="DateDocumentEnd" />
+          <ScalarProperty Name="birthplace" ColumnName="birthplace" />
+          <ScalarProperty Name="DateTimeInArchive" ColumnName="DateTimeInArchive" />
+          <ScalarProperty Name="FireToList" ColumnName="FireToList" />
+          <ScalarProperty Name="IDSCAN" ColumnName="IDSCAN" />
+          <ScalarProperty Name="RoomID" ColumnName="RoomID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+          <ScalarProperty Name="IDGROUPEXIT" ColumnName="IDGROUPEXIT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pLogData">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pLogData">
+        <MappingFragment StoreEntitySet="pLogData">
+          <ScalarProperty Name="TimeVal" ColumnName="TimeVal" />
+          <ScalarProperty Name="NumCom" ColumnName="NumCom" />
+          <ScalarProperty Name="IDComp" ColumnName="IDComp" />
+          <ScalarProperty Name="Par1" ColumnName="Par1" />
+          <ScalarProperty Name="Par2" ColumnName="Par2" />
+          <ScalarProperty Name="Par3" ColumnName="Par3" />
+          <ScalarProperty Name="Par4" ColumnName="Par4" />
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="IndexKey" ColumnName="IndexKey" />
+          <ScalarProperty Name="RazdIndex" ColumnName="RazdIndex" />
+          <ScalarProperty Name="HozOrgan" ColumnName="HozOrgan" />
+          <ScalarProperty Name="HozGuest" ColumnName="HozGuest" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DoorIndex" ColumnName="DoorIndex" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="DeviceTime" ColumnName="DeviceTime" />
+          <ScalarProperty Name="VEvent" ColumnName="VEvent" />
+          <ScalarProperty Name="ZReserv" ColumnName="ZReserv" />
+          <ScalarProperty Name="ZoneIndex" ColumnName="ZoneIndex" />
+          <ScalarProperty Name="ReaderIndex" ColumnName="ReaderIndex" />
+          <ScalarProperty Name="Sign" ColumnName="Sign" />
+          <ScalarProperty Name="tpRzdIndex" ColumnName="tpRzdIndex" />
+          <ScalarProperty Name="tpPar4" ColumnName="tpPar4" />
+          <ScalarProperty Name="IndexZone" ColumnName="IndexZone" />
+          <ScalarProperty Name="tpIndex" ColumnName="tpIndex" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="IdComment" ColumnName="IdComment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pMark">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pMark">
+        <MappingFragment StoreEntitySet="pMark">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Gtype" ColumnName="Gtype" />
+          <ScalarProperty Name="GTypeCodeAdd" ColumnName="GTypeCodeAdd" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+          <ScalarProperty Name="CodeP" ColumnName="CodeP" />
+          <ScalarProperty Name="CodePAdd" ColumnName="CodePAdd" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerName" ColumnName="OwnerName" />
+          <ScalarProperty Name="GrStatus" ColumnName="GrStatus" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Finish" ColumnName="Finish" />
+          <ScalarProperty Name="IndexForContactId" ColumnName="IndexForContactId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+          <ScalarProperty Name="fingertemplate" ColumnName="fingertemplate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Gimnazia1Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Events">
+    <Key>
+      <PropertyRef Name="Event" />
+    </Key>
+    <Property Name="Event" Type="int" Nullable="false" />
+    <Property Name="CharID" Type="varchar" MaxLength="2" />
+    <Property Name="Contents" Type="varchar" MaxLength="60" />
+    <Property Name="Comment" Type="varchar" MaxLength="80" />
+    <Property Name="RealEvent" Type="int" />
+    <Property Name="State" Type="int" />
+    <Property Name="Category" Type="int" />
+    <Property Name="FormatView" Type="int" />
+    <Property Name="SoundNumber" Type="int" />
+    <Property Name="AlarmLevel" Type="int" />
+    <Property Name="GpEvent" Type="int" />
+    <Property Name="EventsCategoryID" Type="int" />
+    <Property Name="IsAlarm" Type="int" />
+  </EntityType>
+  <EntityType Name="pList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="MidName" Type="varchar" MaxLength="25" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="WorkPhone" Type="varchar" MaxLength="25" />
+    <Property Name="HomePhone" Type="varchar" MaxLength="25" />
+    <Property Name="Picture" Type="image" />
+    <Property Name="BirthDate" Type="datetime" />
+    <Property Name="Address" Type="varchar" MaxLength="200" />
+    <Property Name="Company" Type="int" />
+    <Property Name="Section" Type="int" />
+    <Property Name="Post" Type="int" />
+    <Property Name="Schedule" Type="int" />
+    <Property Name="Avto" Type="varchar" MaxLength="200" />
+    <Property Name="Spack" Type="int" />
+    <Property Name="Config" Type="int" />
+    <Property Name="TabNumber" Type="varchar" MaxLength="50" />
+    <Property Name="GrStatus" Type="int" />
+    <Property Name="ChangeTime" Type="datetime" />
+    <Property Name="IndexForContactId" Type="int" />
+    <Property Name="StatusRecord" Type="int" />
+    <Property Name="Patterns_ID" Type="int" />
+    <Property Name="ID_Number_List" Type="varchar" MaxLength="50" />
+    <Property Name="weight" Type="int" />
+    <Property Name="delta_weight" Type="int" />
+    <Property Name="AutoID" Type="int" />
+    <Property Name="GUID_1C" Type="varchar" MaxLength="40" />
+    <Property Name="status_list" Type="int" />
+    <Property Name="EmailList" Type="varchar" MaxLength="200" />
+    <Property Name="fielddelete" Type="int" />
+    <Property Name="BlackList" Type="int" />
+    <Property Name="INN" Type="varchar" MaxLength="40" />
+    <Property Name="ReasonToBlackList" Type="varchar" MaxLength="200" />
+    <Property Name="TypeDocum" Type="int" />
+    <Property Name="SexGuest" Type="int" />
+    <Property Name="DokumSeries" Type="varchar" MaxLength="50" />
+    <Property Name="DokumNumber" Type="varchar" MaxLength="50" />
+    <Property Name="DateDocument" Type="datetime" />
+    <Property Name="KodPodr" Type="varchar" MaxLength="50" />
+    <Property Name="Kem" Type="varchar" MaxLength="200" />
+    <Property Name="DateDocumentEnd" Type="datetime" />
+    <Property Name="birthplace" Type="varchar" MaxLength="200" />
+    <Property Name="DateTimeInArchive" Type="datetime" />
+    <Property Name="FireToList" Type="varchar" MaxLength="200" />
+    <Property Name="IDSCAN" Type="int" />
+    <Property Name="RoomID" Type="int" />
+    <Property Name="OperatorID" Type="int" />
+    <Property Name="Workstation" Type="varchar" MaxLength="50" />
+    <Property Name="IDGROUPEXIT" Type="int" />
+  </EntityType>
+  <EntityType Name="pLogData">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="TimeVal" Type="datetime" Nullable="false" />
+    <Property Name="NumCom" Type="int" />
+    <Property Name="IDComp" Type="int" />
+    <Property Name="Par1" Type="int" />
+    <Property Name="Par2" Type="int" />
+    <Property Name="Par3" Type="int" />
+    <Property Name="Par4" Type="int" />
+    <Property Name="Event" Type="int" Nullable="false" />
+    <Property Name="IndexKey" Type="int" />
+    <Property Name="RazdIndex" Type="int" />
+    <Property Name="HozOrgan" Type="int" />
+    <Property Name="HozGuest" Type="int" />
+    <Property Name="Remark" Type="varchar" MaxLength="65" />
+    <Property Name="DoorIndex" Type="int" />
+    <Property Name="Mode" Type="int" />
+    <Property Name="DeviceTime" Type="datetime" />
+    <Property Name="VEvent" Type="int" />
+    <Property Name="ZReserv" Type="int" />
+    <Property Name="ZoneIndex" Type="int" />
+    <Property Name="ReaderIndex" Type="int" />
+    <Property Name="Sign" Type="int" />
+    <Property Name="tpRzdIndex" Type="int" />
+    <Property Name="tpPar4" Type="int" />
+    <Property Name="IndexZone" Type="int" />
+    <Property Name="tpIndex" Type="int" />
+    <Property Name="GUID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IdComment" Type="int" />
+  </EntityType>
+  <EntityType Name="pMark">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Gtype" Type="int" Nullable="false" />
+    <Property Name="GTypeCodeAdd" Type="int" />
+    <Property Name="Config" Type="int" Nullable="false" />
+    <Property Name="CodeP" Type="varchar" MaxLength="50" />
+    <Property Name="CodePAdd" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Owner" Type="int" Nullable="false" />
+    <Property Name="OwnerName" Type="varchar" MaxLength="30" />
+    <Property Name="GrStatus" Type="int" />
+    <Property Name="GroupID" Type="int" Nullable="false" />
+    <Property Name="Start" Type="datetime" />
+    <Property Name="Finish" Type="datetime" />
+    <Property Name="IndexForContactId" Type="int" />
+    <Property Name="Comment" Type="varchar" MaxLength="250" />
+    <Property Name="Login" Type="varchar" MaxLength="100" />
+    <Property Name="OperatorID" Type="int" />
+    <Property Name="Workstation" Type="varchar" MaxLength="50" />
+    <Property Name="fingertemplate" Type="varchar" MaxLength="2500" />
+  </EntityType>
+  <EntityContainer Name="Хранилище Gimnazia1ModelContainer">
+    <EntitySet Name="Events" EntityType="Self.Events" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pList" EntityType="Self.pList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pLogData" EntityType="Self.pLogData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pMark" EntityType="Self.pMark" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Gimnazia1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Events">
+    <Key>
+      <PropertyRef Name="Event" />
+    </Key>
+    <Property Name="Event" Type="Int32" Nullable="false" />
+    <Property Name="CharID" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Contents" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="RealEvent" Type="Int32" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Category" Type="Int32" />
+    <Property Name="FormatView" Type="Int32" />
+    <Property Name="SoundNumber" Type="Int32" />
+    <Property Name="AlarmLevel" Type="Int32" />
+    <Property Name="GpEvent" Type="Int32" />
+    <Property Name="EventsCategoryID" Type="Int32" />
+    <Property Name="IsAlarm" Type="Int32" />
+  </EntityType>
+  <EntityType Name="pList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MidName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="WorkPhone" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="HomePhone" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BirthDate" Type="DateTime" Precision="3" />
+    <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Company" Type="Int32" />
+    <Property Name="Section" Type="Int32" />
+    <Property Name="Post" Type="Int32" />
+    <Property Name="Schedule" Type="Int32" />
+    <Property Name="Avto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Spack" Type="Int32" />
+    <Property Name="Config" Type="Int32" />
+    <Property Name="TabNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GrStatus" Type="Int32" />
+    <Property Name="ChangeTime" Type="DateTime" Precision="3" />
+    <Property Name="IndexForContactId" Type="Int32" />
+    <Property Name="StatusRecord" Type="Int32" />
+    <Property Name="Patterns_ID" Type="Int32" />
+    <Property Name="ID_Number_List" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="weight" Type="Int32" />
+    <Property Name="delta_weight" Type="Int32" />
+    <Property Name="AutoID" Type="Int32" />
+    <Property Name="GUID_1C" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="status_list" Type="Int32" />
+    <Property Name="EmailList" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="fielddelete" Type="Int32" />
+    <Property Name="BlackList" Type="Int32" />
+    <Property Name="INN" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="ReasonToBlackList" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TypeDocum" Type="Int32" />
+    <Property Name="SexGuest" Type="Int32" />
+    <Property Name="DokumSeries" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DokumNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateDocument" Type="DateTime" Precision="3" />
+    <Property Name="KodPodr" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Kem" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DateDocumentEnd" Type="DateTime" Precision="3" />
+    <Property Name="birthplace" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DateTimeInArchive" Type="DateTime" Precision="3" />
+    <Property Name="FireToList" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IDSCAN" Type="Int32" />
+    <Property Name="RoomID" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDGROUPEXIT" Type="Int32" />
+  </EntityType>
+  <EntityType Name="pLogData">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="TimeVal" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="NumCom" Type="Int32" />
+    <Property Name="IDComp" Type="Int32" />
+    <Property Name="Par1" Type="Int32" />
+    <Property Name="Par2" Type="Int32" />
+    <Property Name="Par3" Type="Int32" />
+    <Property Name="Par4" Type="Int32" />
+    <Property Name="Event" Type="Int32" Nullable="false" />
+    <Property Name="IndexKey" Type="Int32" />
+    <Property Name="RazdIndex" Type="Int32" />
+    <Property Name="HozOrgan" Type="Int32" />
+    <Property Name="HozGuest" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="DoorIndex" Type="Int32" />
+    <Property Name="Mode" Type="Int32" />
+    <Property Name="DeviceTime" Type="DateTime" Precision="3" />
+    <Property Name="VEvent" Type="Int32" />
+    <Property Name="ZReserv" Type="Int32" />
+    <Property Name="ZoneIndex" Type="Int32" />
+    <Property Name="ReaderIndex" Type="Int32" />
+    <Property Name="Sign" Type="Int32" />
+    <Property Name="tpRzdIndex" Type="Int32" />
+    <Property Name="tpPar4" Type="Int32" />
+    <Property Name="IndexZone" Type="Int32" />
+    <Property Name="tpIndex" Type="Int32" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="IdComment" Type="Int32" />
+  </EntityType>
+  <EntityType Name="pMark">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Gtype" Type="Int32" Nullable="false" />
+    <Property Name="GTypeCodeAdd" Type="Int32" />
+    <Property Name="Config" Type="Int32" Nullable="false" />
+    <Property Name="CodeP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CodePAdd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <Property Name="OwnerName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="GrStatus" Type="Int32" />
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="Start" Type="DateTime" Precision="3" />
+    <Property Name="Finish" Type="DateTime" Precision="3" />
+    <Property Name="IndexForContactId" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Login" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fingertemplate" Type="String" MaxLength="2500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="Gimnazia1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Events" EntityType="Self.Events" />
+    <EntitySet Name="pList" EntityType="Self.pList" />
+    <EntitySet Name="pLogData" EntityType="Self.pLogData" />
+    <EntitySet Name="pMark" EntityType="Self.pMark" />
+  </EntityContainer>
+</Schema>
